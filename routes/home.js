@@ -71,7 +71,7 @@ routes.post('/create' , async (req , res) => {
             return res.redirect('back') ;
         }
         obj.save() ;
-        req.flash('success' , 'Successfully register , WELCOME TO HACKVOUCHER') ;
+        req.flash('success' , 'Successfully register , WELCOME TO VOUCHER DEAL') ;
         return res.redirect('/sign-in')
     }else{
         console.log('user is already register') ;
